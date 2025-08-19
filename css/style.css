@@ -70,6 +70,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+/* Remove all link underlines */
+a {
+  text-decoration: none;
+}
+
 /* ======================
    COMPONENTS 
    ====================== */
@@ -81,7 +86,6 @@ p {
   margin-top: 1rem;
   background-color: var(--primary);
   color: white;
-  text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -229,7 +233,6 @@ header.scrolled {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary);
-  text-decoration: none;
   font-family: 'Playfair Display', serif;
   transition: transform 0.3s ease;
 }
@@ -269,7 +272,6 @@ header.scrolled {
 
 #navMenu a {
   color: var(--dark);
-  text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
   padding: 0.5rem 0;
@@ -673,22 +675,6 @@ footer {
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
   position: relative;
-  padding-bottom: 10px;
-}
-
-.footer-col h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background-color: var(--accent);
-  transition: width 0.3s ease;
-}
-
-.footer-col:hover h3::after {
-  width: 60px;
 }
 
 .footer-col p {
@@ -706,14 +692,11 @@ footer {
 
 .footer-links a {
   color: #bbb;
-  text-decoration: none;
   transition: all 0.3s ease;
-  display: inline-block;
 }
 
 .footer-links a:hover {
   color: var(--accent);
-  transform: translateX(5px);
 }
 
 .social-links {
@@ -736,7 +719,6 @@ footer {
 
 .social-links a:hover {
   background-color: var(--accent);
-  transform: translateY(-3px);
 }
 
 .copyright {
